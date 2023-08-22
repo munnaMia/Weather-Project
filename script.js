@@ -8,7 +8,7 @@
 
 // const Search = () => {
 //   let urlBody =
-//     "http://api.weatherapi.com/v1/current.json?key=%20a19659f5c65f4b8ba2593628232108&q=";
+//     "https://api.weatherapi.com/v1/current.json?key=%20a19659f5c65f4b8ba2593628232108&q=";
 //   let url = urlBody + locationSearch.value;
 //   fetch(url)
 //     .then((respons) => respons.json())
@@ -40,7 +40,7 @@ let DOMinsert = (id, data) => {
 }
 
 const search = (Location = "London") => {
-  let url = "http://api.weatherapi.com/v1/current.json?key=%20a19659f5c65f4b8ba2593628232108&q=" + Location;
+  let url = "https://api.weatherapi.com/v1/current.json?key=%20a19659f5c65f4b8ba2593628232108&q=" + Location;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
