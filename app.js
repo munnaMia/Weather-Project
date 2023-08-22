@@ -1,0 +1,1 @@
+fetch("http://api.weatherapi.com/v1/current.json?key=%20a19659f5c65f4b8ba2593628232108&q=London").then(rex => rex.json()).then(data => console.log(data))

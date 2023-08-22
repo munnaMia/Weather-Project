@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --shadow-color: 0deg 0% 49%;
+  --shadow-elevation-medium: 0px 1px 1.3px hsl(var(--shadow-color) / 0.28),
+    -0.1px 4.6px 5.9px -0.5px hsl(var(--shadow-color) / 0.39),
+    -0.2px 10.5px 13.5px -0.9px hsl(var(--shadow-color) / 0.5),
+    -0.5px 23.8px 30.7px -1.4px hsl(var(--shadow-color) / 0.61);
+
+    --shadow-color1: 0deg 0% 34%;
+    --shadow-elevation-medium1:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color1) / 0.55),
+    1px 1.9px 2.4px -0.8px hsl(var(--shadow-color1) / 0.55),
+    2.5px 5.1px 6.4px -1.7px hsl(var(--shadow-color1) / 0.55),
+    6.3px 12.5px 15.7px -2.5px hsl(var(--shadow-color1) / 0.55);
+}
+/* main container desings  */
+.Container {
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+  height: 80vh;
+  width: 90vw;
+  position: relative;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding-top: 15px;
+  box-shadow: var(--shadow-elevation-medium);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* search bar design  */
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  margin: 0 0 10px 0;
+  margin-bottom: 20px;
+}
+
+.search-bar .search-bar__input {
+  background-color: rgba(255, 255, 255, 0.548);
+  height: 30px;
+  width: 250px;
+  padding: 4px;
+  padding-left: 7px;
+  font-weight: 200;
+  border: none;
+  outline: none;
+  border-radius: 7px 0 0 7px;
+}
+
+#search_btn {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: 700;
+  height: 30px;
+  outline: 0;
+  border: 0;
+  width: 60px;
+  border-radius: 0 7px 7px 0;
+}
+
+
+/* date and time bar  */
+
+.date-time{
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 2px;
+}
+
+.date-time svg{
+  padding-top: 4px;
+  height: 20px;
+  width: 20px;
+}
+#date_time{
+  font-size: 20px;
+  opacity: 0.5;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.child-container{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+/* location desigh  */
+.Result_container{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* location data desing  */
+.Location-details{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+
+.city_name{
+  font-weight: 700;
+  font-size: 50px;
+  color: rgb(255 255 255 / 77%);
+}
+
+.country_name{
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(255 255 255 / 70%);
+  line-height: 72px;
+}
+
+/* temp details  */
+.temp_details{
+  display: flex;
+  flex-direction: row;
+}
+
+#temp{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 800;
+  font-size: 150px;
+  opacity: 0.6;
+  color: azure;
+}
+
+
+
+.cORf{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  opacity: 0.6;
+  color: rgb(255 255 255 / 71%);
+  line-height: 97px;
+}
+
+
+.weather-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  width: 95%;
+  margin-top: 70px;
+  margin-left: 33px;
+}
+
+
+.weather_title{
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: 0;
+  padding-top: 3px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.557);
+  color: rgb(255, 255, 255);
+  height: 26px;
+  border-radius: 10px;
+  background-color: #6da9ff;
+  opacity: 0.7;
+}
+.wind_data{
+  margin-top: 15px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.621);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+
+.single_weather_result{
+  font-size: 70px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.621);
+}
+
+.single_weather_result1{
+  font-size: 30px;
+  margin-top: 25px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.621);
+}
+
+.weather_details_data{
+  background-color: rgba(240, 248, 255, 0.329);
+  width: 130px;
+  height: 130px;
+  border: 0;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: var(--shadow-elevation-medium1);
+}
+
+.weather_details_data:hover{
+  width: 120px;
+  height: 120px;
+  box-shadow: none;
+}
